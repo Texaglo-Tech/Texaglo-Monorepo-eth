@@ -1,0 +1,514 @@
+{
+  "version": "0.1.0",
+  "name": "DaoLanding",
+  "instructions": [
+    {
+      "name": "initialize",
+      "accounts": [
+        {
+          "name": "contractData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "mintFee",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "finalize",
+      "accounts": [
+        {
+          "name": "contractData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "updateFee",
+      "accounts": [
+        {
+          "name": "contractData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        }
+      ],
+      "args": [
+        {
+          "name": "mintFee",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "mintNft",
+      "accounts": [
+        {
+          "name": "mintAuthority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "mint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "metadata",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenMetadataProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "masterEdition",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "contractData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "subdomains",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "creatorKey",
+          "type": "publicKey"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "subdomain",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "mintNftcollection",
+      "accounts": [
+        {
+          "name": "mintAuthority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "mint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "metadata",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenMetadataProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "masterEdition",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "contractData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "collectionAuthorityRecord",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "collectionMint",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "collectionMetadata",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "collectionMasterEdition",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "collectionUpdateAuthority",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "subdomains",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "creatorKey",
+          "type": "publicKey"
+        },
+        {
+          "name": "uri",
+          "type": "string"
+        },
+        {
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "name": "subdomain",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "updateInfo",
+      "accounts": [
+        {
+          "name": "mintAuthority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userInfo",
+          "isMut": true,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "data",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "withdraw",
+      "accounts": [
+        {
+          "name": "contractData",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "treasury",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "authority",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "ContractData",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "treasuryBump",
+            "type": "u8"
+          },
+          {
+            "name": "authority",
+            "type": "publicKey"
+          },
+          {
+            "name": "fee",
+            "type": "u64"
+          },
+          {
+            "name": "totalMinted",
+            "type": "u16"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UserInfo",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "dataInfo",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "name": "UserData",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "totalMinted",
+            "type": "u16"
+          },
+          {
+            "name": "latestMintTimestamp",
+            "type": "u32"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SubDomainData",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "subdomain",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ],
+  "events": [
+    {
+      "name": "Finalized",
+      "fields": [
+        {
+          "name": "authority",
+          "type": "publicKey",
+          "index": false
+        }
+      ]
+    },
+    {
+      "name": "Initialized",
+      "fields": [
+        {
+          "name": "fee",
+          "type": "u64",
+          "index": false
+        }
+      ]
+    },
+    {
+      "name": "NFTMinted",
+      "fields": [
+        {
+          "name": "nftNum",
+          "type": "u16",
+          "index": false
+        }
+      ]
+    },
+    {
+      "name": "NFTMinted",
+      "fields": [
+        {
+          "name": "nftNum",
+          "type": "u16",
+          "index": false
+        }
+      ]
+    },
+    {
+      "name": "FeeUpdated",
+      "fields": [
+        {
+          "name": "fee",
+          "type": "u64",
+          "index": false
+        }
+      ]
+    },
+    {
+      "name": "Withdrawn",
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64",
+          "index": false
+        },
+        {
+          "name": "authority",
+          "type": "publicKey",
+          "index": false
+        }
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "RequestRentSol",
+      "msg": "SOLs is not enough"
+    },
+    {
+      "code": 6001,
+      "name": "InsufficientFunds",
+      "msg": "SOLs is not enough"
+    },
+    {
+      "code": 6002,
+      "name": "MintLimit",
+      "msg": "Max mint limit exceeded"
+    },
+    {
+      "code": 6003,
+      "name": "ExistDomain",
+      "msg": "Domain is exist already"
+    }
+  ],
+  "metadata": {
+    "address": "Amgxr2WGeKpBZzomvkTw9p5MGrTREUgCmjKzE4x5JGbt"
+  }
+}

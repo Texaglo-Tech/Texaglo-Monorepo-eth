@@ -1,0 +1,25 @@
+.SearchToken {
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+}
+
+.SearchToken_box_heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* @media only screen and (max-width: 35em) {
+    .SearchToken {
+        width: 95%;
+    }
+} */

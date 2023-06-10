@@ -1,0 +1,264 @@
+.header {
+  background-color: transparent;
+  display: flex;
+  flex: 1 1 0;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding-bottom: 15px;
+  padding-top: 15px;
+
+  .dmh {
+    background-image: url(../../asset/dmh.png);
+  }
+
+  .headeroption {
+    display: flex;
+    align-items: center;
+  }
+
+  .register {
+    color: black;
+    text-decoration: none;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-weight: bold;
+    &:hover {color: rgb(85, 85, 83)}
+  } 
+
+  .texaglo {
+    margin-top: 5px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  padding-inline: 4%;
+  span {
+    padding: 10px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex: 1 1 0;
+  background-size:cover !important;
+  padding-inline: 10%;
+  padding-block: 10px;
+  align-items: flex-end;
+  color: white;
+  font-weight: bold;
+  // position: fixed;
+  // margin-top: 200px;
+  // left: 0px;
+  // bottom: 0px;
+
+  padding-bottom: 60px;
+  background: linear-gradient(rgba(53,0,133,0.7) 1%, rgba(24,4,55,0.65) 100%), url(../../asset/back.png) bottom, rgb(29,5,67);
+  padding-top: 60px;
+  width: 100%;
+  margin-top: 100%;
+  
+  @media (max-width: 1200px) {
+    font-size: 13px;
+    padding-inline: 17%;
+  }
+  @media (max-width: 850px) {
+    padding-inline: 10%;
+    font-size: 11px;
+  }
+
+  @media (max-width: 600px) {
+  font-size: 8px;
+  }
+
+  .footerLeft {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;;
+    text-decoration: underline;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .footerCenter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 2 2;
+    flex-direction: column;
+  }
+
+  .twitter {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 40%);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+  }
+
+  .icon {
+    margin-bottom: 5px;
+  }
+
+  .discord {
+    position: fixed;
+    z-index: 2147483000;
+    cursor: pointer;
+    outline: none;
+    height: 56px;
+    border-radius: 56px;
+    border: none;
+    padding: 0px;
+    transition: box-shadow 0.2s ease 0s, background-color 0.3s ease 0s, opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    animation: 0.3s ease 0s 1 normal none running animation-1nrbrg8;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: rgb(88 101 242 / 30%) 0px 3px 5px -1px, rgb(88 101 242 / 14%) 0px 6px 10px 0px, rgb(88 101 242 / 12%) 0px 1px 18px 0px;
+    background-color: rgb(88, 101, 242);
+  }
+
+  .discordClose {
+    position: fixed;
+    z-index: 2147483000;
+    cursor: pointer;
+    outline: none;
+    height: 56px;
+    border-radius: 56px;
+    border: none;
+    padding: 0px;
+    right: 35px;
+    bottom: 30px;
+    background-color: transparent;
+  }
+
+  .services {
+    color: white;
+  }
+
+  .footerRight {
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+}
+.footer2 {
+  display: flex;
+  flex: 1 1 0;
+  background-size:cover !important;
+  padding-inline: 10%;
+  padding-block: 10px;
+  align-items: flex-end;
+  color: white;
+  font-weight: bold;
+  // position: fixed;
+  // margin-top: 200px;
+  // left: 0px;
+  // bottom: 0px;
+
+  padding-bottom: 60px;
+  //background: linear-gradient(rgba(53,0,133,0.7) 1%, rgba(24,4,55,0.65) 100%), url(../../asset/back.png) bottom, rgb(29,5,67);
+  padding-top: 60px;
+  width: 100%;
+  margin-top: 2.5%;
+  
+  @media (max-width: 1200px) {
+    font-size: 13px;
+    padding-inline: 17%;
+  }
+  @media (max-width: 850px) {
+    padding-inline: 10%;
+    font-size: 11px;
+  }
+
+  @media (max-width: 600px) {
+  font-size: 8px;
+  }
+
+  .footerLeft {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;;
+    text-decoration: underline;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      height: 100%;
+    }
+  }
+
+  .footerCenter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex: 2 2;
+    flex-direction: column;
+  }
+
+  .twitter {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 40%);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+  }
+
+  .icon {
+    margin-bottom: 5px;
+  }
+
+  .discord {
+    position: fixed;
+    z-index: 2147483000;
+    cursor: pointer;
+    outline: none;
+    height: 56px;
+    border-radius: 56px;
+    border: none;
+    padding: 0px;
+    transition: box-shadow 0.2s ease 0s, background-color 0.3s ease 0s, opacity 0.2s ease 0s, transform 0.2s ease 0s;
+    animation: 0.3s ease 0s 1 normal none running animation-1nrbrg8;
+    right: 30px;
+    bottom: 30px;
+    box-shadow: rgb(88 101 242 / 30%) 0px 3px 5px -1px, rgb(88 101 242 / 14%) 0px 6px 10px 0px, rgb(88 101 242 / 12%) 0px 1px 18px 0px;
+    background-color: rgb(88, 101, 242);
+  }
+
+  .discordClose {
+    position: fixed;
+    z-index: 2147483000;
+    cursor: pointer;
+    outline: none;
+    height: 56px;
+    border-radius: 56px;
+    border: none;
+    padding: 0px;
+    right: 35px;
+    bottom: 30px;
+    background-color: transparent;
+  }
+
+  .services {
+    color: white;
+  }
+
+  .footerRight {
+    flex: 1 1;
+    display: flex;
+    justify-content: flex-end;
+    
+  }
+}
